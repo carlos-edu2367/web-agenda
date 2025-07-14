@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Neectify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1E1B2E] text-white min-h-screen">
+
+    <!-- Sidebar fixa -->
+    <aside class="w-64 h-screen bg-[#14121A] p-6 fixed top-0 left-0 z-10">
+      <h1 class="text-2xl font-bold text-purple-500 mb-8">Neectify</h1>
+      <nav class="space-y-4">
+        <a href="#" class="block text-gray-300 hover:text-purple-400">Dashboard</a>
+        <a href="#" class="block text-gray-300 hover:text-purple-400">Agendamentos</a>
+        <a href="#" class="block text-gray-300 hover:text-purple-400">Clientes</a>
+        <a href="#" class="block text-gray-300 hover:text-purple-400">Serviços</a>
+        <a href="#" class="block text-gray-300 hover:text-purple-400">Profissionais</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="ml-64 p-8 space-y-8">
+      <!-- Título -->
+      <h2 class="text-2xl font-semibold">Visão Geral</h2>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Agendamentos de Hoje</p>
+          <p class="text-2xl font-bold mt-2">8</p>
+        </div>
+
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Agendamentos no Mês</p>
+          <p class="text-2xl font-bold mt-2">137</p>
+        </div>
+
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Novos Clientes</p>
+          <p class="text-2xl font-bold mt-2">24</p>
+        </div>
+
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Receita Estimada</p>
+          <p class="text-2xl font-bold mt-2">R$ 3.470,00</p>
+        </div>
+
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Profissionais Ativos</p>
+          <p class="text-2xl font-bold mt-2">4</p>
+        </div>
+
+        <div class="bg-[#2A2540] rounded-xl p-4 shadow-md">
+          <p class="text-gray-400 text-sm">Taxa de Cancelamento</p>
+          <p class="text-2xl font-bold mt-2">12%</p>
+        </div>
+      </div>
+
+      <!-- Tabela de Agendamentos -->
+      <div class="bg-[#2A2540] rounded-xl p-6 shadow-md overflow-x-auto">
+        <h3 class="text-lg font-semibold mb-4">Próximos Agendamentos</h3>
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-gray-400 text-left">
+              <th class="pb-2">Cliente</th>
+              <th class="pb-2">Serviço</th>
+              <th class="pb-2">Horário</th>
+              <th class="pb-2">Profissional</th>
+              <th class="pb-2">Status</th>
+            </tr>
+          </thead>
+          <tbody class="text-white">
+            <tr class="border-t border-gray-700">
+              <td class="py-2">Maria Silva</td>
+              <td>Corte Feminino</td>
+              <td>14:00</td>
+              <td>Ana Paula</td>
+              <td class="text-yellow-400">Agendado</td>
+            </tr>
+            <tr class="border-t border-gray-700">
+              <td class="py-2">João Ferreira</td>
+              <td>Massagem</td>
+              <td>15:30</td>
+              <td>Carlos</td>
+              <td class="text-green-400">Concluído</td>
+            </tr>
+            <tr class="border-t border-gray-700">
+              <td class="py-2">Renata Lima</td>
+              <td>Sobrancelha</td>
+              <td>16:00</td>
+              <td>Ana Paula</td>
+              <td class="text-red-400">Cancelado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Área de gráfico (simulado) -->
+      <div class="bg-[#2A2540] rounded-xl p-6 shadow-md">
+        <h3 class="text-lg font-semibold mb-4">Agendamentos por dia da semana</h3>
+        <div class="h-40 bg-[#1E1B2E] rounded-lg flex items-center justify-center text-gray-400">
+          (Gráfico futuramente)
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
